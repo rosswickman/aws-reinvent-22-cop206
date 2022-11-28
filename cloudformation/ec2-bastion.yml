@@ -109,7 +109,7 @@ Resources:
       ImageId: !Ref pOperatingSystem
       Monitoring: false
       InstanceType: !Ref pInstanceType
-      IamInstanceProfile: !Ref rInstanceProfile
+      IamInstanceProfile: !Ref rec2InstanceProfile
       EbsOptimized: true
       SourceDestCheck: true
       SubnetId: !Ref pSubnet
