@@ -3,6 +3,10 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: EC2 bastion for latest AWS Linux 2 EC2 deployment
 
 Metadata:
+    guard:
+      SuppressedRules:
+        - 'EC2_INSTANCE_DETAILED_MONITORING_ENABLED'
+
   AWS::CloudFormation::Interface:
     ParameterGroups:
       - Label:
